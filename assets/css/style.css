@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+section {
+    min-height: 100vh;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-left: -12px;
+    margin-right: -12px;
+    flex-wrap: wrap;
+}
+
+.card {
+    padding-bottom: 16px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden
+}
+
+.card:hover {
+    padding-bottom: 16px;
+    cursor: pointer;
+    box-shadow: 0px 1px 10px 0px #0000001A;
+    gap: 30px;
+}
+
+.fame {
+    font-family: "work sans", sans-serif;
+    color: #7B7B7B;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 23px;
+    margin-right: 23px;
+    font-size: 16px;
+}
+
+.name {
+    font-family: "work sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 24px;
+    text-align: center;
+    line-height: 24.72px;
+    color: #000000;
+}
+
+.img {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -41px;
+    gap: 5px;
+}
+
+.svg-box {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svg-box:hover {
+    box-shadow: 1px 7px 10px 0px #FF530080;
+    background-color: #FF5300;
+}
+
+.svg-box:hover path {
+    fill: white;
+}
+
+.card:hover .main-box {
+    right: 0px;
+}
+
+.col-12 {
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+@media (min-width:576px) {
+    .col-sm-6 {
+        width: 50%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:768px) {
+    .col-md-4 {
+        width: 33.33%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (min-width:992px) {
+    .col-lg-3 {
+        width: 25%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
